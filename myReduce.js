@@ -5,18 +5,18 @@
 
 var numArray = [0,1,10,100,1000];
 
-function add () {
-	return current + previous;
-}
 
-function myReduce(arr, add) {
+
+function myReduce(arr, callback) {
 
 for(var i = 0; i < arr.length; i++){
-		add(arr[i], i, arr);
+		callback(arr[i], i, arr);
 }
+return (numArray);
 
 }
-myReduce(numArray, add);
+
+
 /*
  Best if you don't code out here.
  If you want to check your code, use `index.js`!
